@@ -27,10 +27,18 @@ import { draw } from "./common/draw";
 import FileReader from "./FileReader";
 import { saveAs } from "file-saver";
 
+const defaultFromValue = `
+C 10 10
+L 1 5 1 10
+R  2 2 7 7
+R 4 4 10 10
+B 5 5 ♥ 
+`;
+
 export default {
   data() {
     return {
-      from: "",
+      from: defaultFromValue,
       to: "",
     };
   },
